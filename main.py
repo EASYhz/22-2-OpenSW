@@ -8,7 +8,7 @@ import os
 from PIL import Image
 
 # Image
-image = cv2.imread('img.png')
+image = cv2.imread('img1.png')
 gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 
 # Read file in os
@@ -21,6 +21,8 @@ os.remove(filename)
 
 # Show result
 print(text)
+
+
 # cv2.imshow('image', image)
 
 # 함수
@@ -28,3 +30,15 @@ print(text)
 # 2. 계산
 # 3. 결과
 
+def split_calculation(result):
+    r = result.split('\n')
+
+    # 마지막 값이 null 이면 drop
+    if r[-1] == '':
+        r.pop()
+
+    return r
+
+
+a = split_calculation(text)
+print(a)
