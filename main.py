@@ -31,14 +31,28 @@ print(text)
 # 3. 결과
 
 def split_calculation(result):
-    r = result.split('\n')
+    """
+    :param result: OCR의 결과
+    :return: [list] OCR의 결과 식들을 리스트로 반환
+    """
+    calculations = result.split('\n')
 
     # 마지막 값이 null 이면 drop
-    if r[-1] == '':
-        r.pop()
+    if calculations[-1] == '':
+        calculations.pop()
 
-    return r
+    return calculations
 
-
+# 결과 확인 ( 지워도 됨)
 a = split_calculation(text)
 print(a)
+
+def calculate():
+    """
+
+    :return: result
+    """
+
+
+
+
