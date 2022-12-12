@@ -45,14 +45,20 @@ def split_calculation(result):
 
 # 결과 확인 ( 지워도 됨)
 a = split_calculation(text)
-print(a)
 
-def calculate():
-    """
-
-    :return: result
-    """
-
-
-
+x = a[0].split('+')
+y = a[1].split('+')
+z = a[2].split('+')
+sum = 0
+for i in x:
+    sum += int(i)
+print(sum)
+sum = 0
+for i in y:
+    sum += int(i)
+print(sum)
+sum = 0
+for i in z:
+    sum += int(i)
+print(sum)
 
