@@ -43,7 +43,7 @@ def split_calculation(result):
 
     return calculations
 
-# 결과 확인 ( 지워도 됨)
+# 숫자 분리, 계산 출력
 a = split_calculation(text)
 
 x = a[0].split('+')
@@ -61,4 +61,3 @@ sum = 0
 for i in z:
     sum += int(i)
 print(sum)
-
