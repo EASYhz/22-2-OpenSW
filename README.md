@@ -1,4 +1,13 @@
-# 22-2-OpenSW
+# 22-2-Open Source SW - TEAM 15
+## mebers
+* AI·소프트웨어학부(인공지능전공) 김범수
+* AI·소프트웨어학부(인공지능전공) 박준혁
+* AI·소프트웨어학부(인공지능전공) 서정덕
+* AI·소프트웨어학부(인공지능전공) 이지윤
+## Goals
+* A program that receives a picture with an expression and returns the result
+  
+### Input
 ```c
 #include <stdio.h>
 
