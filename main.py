@@ -46,6 +46,8 @@ def split_calculation(result):
 # 숫자 분리, 계산 출력
 a = split_calculation(text)
 
+print('계산 결과 : ')
+
 x = a[0].split('+')
 y = a[1].split('+')
 z = a[2].split('+')
